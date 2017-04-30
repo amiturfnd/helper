@@ -1,1 +1,52 @@
 /* You can add global styles to this file, and also import other style files */
+$bg-success-color: #dff0d8;
+$bg-info-color: #d9edf7;
+$bg-warning-color: #fcf8e3;
+$bg-danger-color: #f2dede;
+
+$text-success-color: #3c763d;
+$text-info-color: #31708f;
+$text-primary-color: #337ab7;
+$text-warning-color: #8a6d3b;
+$text-danger-color: #a94442;
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body{
+	margin: 0 0 40px;
+	width: 100%;
+	padding: 2%;
+}
+header{
+
+}
+main{
+	width: 100%;
+	margin: 0 10px;
+}
+footer{
+	@include border-radius(5px);
+	background: $text-primary-color;
+	color: #FFF;
+	line-height: 40px;
+	vertical-align: middle;
+	padding-left: 20px;
+	position: absolute;
+  left: 0;
+  bottom: 1px;
+  width: 99%;
+  overflow:hidden;
+}
+
+.strikethrough {
+  text-decoration: line-through;
+}
